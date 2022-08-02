@@ -26,15 +26,3 @@ void show_long(long x) {
     show_byte((byte_pointer) &x, sizeof(long));
 }
 
-int main() {
-    int num;
-    printf("请输入int类型数字：");
-    scanf("%d", &num);  
-    float fNum = (float) num;
-    int *pval = &num;
-    long lNum = (long) num;
-    show_int(num);
-    show_long(lNum);
-    show_float(fNum);
-    show_pointer(pval);
-}
