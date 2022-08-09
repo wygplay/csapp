@@ -11,8 +11,12 @@ int main() {
     float fNum = (float) num;
     int *pval = &num;
     long lNum = (long) num;
+    printf("int字节序列：\n");
     show_int(num);
+    printf("long字节序列：\n");
     show_long(lNum);
+    printf("float字节序列：\n");
     show_float(fNum);
+    printf("地址字节序列：\n");
     show_pointer(pval);
 }
